@@ -4,17 +4,26 @@ using UnityEngine;
 
 public class CameraSatelitte : MonoBehaviour
 {
-    int zoom = 20;
-    int normal = 60;
+    public int zoom = 40;
+    //int zoom2 = 20;
+    public int normal = 60;
     int smooth = 5;
 
     private bool isZoomed = false;
 
-    [SerializeField] private Camera cam;
+    [SerializeField] private Camera m_camera;
     [SerializeField] private Transform target;
     [SerializeField] private float distanceCible = 10;
 
     private Vector3 anciennePosition;
+    private Vector3 debutPosition;
+    private Vector3 debutRotation;
+
+    void Awake()
+    {
+        debutPosition = m_camera.transform.position;
+    }
+
 
 
     // Start is called before the first frame update
@@ -30,38 +39,44 @@ public class CameraSatelitte : MonoBehaviour
          {
              isZoomed = !isZoomed;
          }
-
-
          if(isZoomed)
          {
-             cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, zoom, Time.deltaTime * smooth);
-         }
+             m_camera.fieldOfView = Mathf.Lerp(m_camera.fieldOfView, zoom, Time.deltaTime * smooth);
+        } 
 
-         else
+        else
          {
-             cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, normal, Time.deltaTime * smooth);
-         }
-         
-        if (Input.GetMouseButtonDown(0))
-        {
-            anciennePosition = cam.ScreenToViewportPoint(Input.mousePosition);
+             m_camera.fieldOfView = Mathf.Lerp(m_camera.fieldOfView, normal, Time.deltaTime * smooth);
         }
-        else if (Input.GetMouseButton(0))
+
+        if (Input.GetMouseButtonDown(1))
         {
-            Vector3 newPosition = cam.ScreenToViewportPoint(Input.mousePosition);
+            anciennePosition = m_camera.ScreenToViewportPoint(Input.mousePosition);
+        }
+        else if (Input.GetMouseButton(1))
+        {
+            Vector3 newPosition = m_camera.ScreenToViewportPoint(Input.mousePosition);
             Vector3 direction = anciennePosition - newPosition;
 
-            float rotationAroundYAxis = -direction.x * 180; // camera moves horizontally
-            float rotationAroundXAxis = direction.y * 180; // camera moves vertically
+            float rotationAroundYAxis = -direction.x * 180; 
+            float rotationAroundXAxis = direction.y * 180; 
 
-            cam.transform.position = target.position;
+            m_camera.transform.position = target.position;
 
-            cam.transform.Rotate(new Vector3(1, 0, 0), rotationAroundXAxis);
-            cam.transform.Rotate(new Vector3(0, 1, 0), rotationAroundYAxis, Space.World);
+            m_camera.transform.Rotate(new Vector3(1, 0, 0), rotationAroundXAxis);
+            m_camera.transform.Rotate(new Vector3(0, 1, 0), rotationAroundYAxis, Space.World);
 
-            cam.transform.Translate(new Vector3(0, 0, -distanceCible));
+            m_camera.transform.Translate(new Vector3(0, 0, -distanceCible));
 
             anciennePosition = newPosition;
+        }
+
+        if(Input.GetButtonDown("Jump"))
+        {
+
+            m_camera.transform.position = debutPosition;
+            m_camera.transform.localRotation = Quaternion.Euler(0, 0, 0);      
+
         }
 
     }
