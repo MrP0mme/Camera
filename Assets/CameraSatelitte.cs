@@ -5,7 +5,6 @@ using UnityEngine;
 public class CameraSatelitte : MonoBehaviour
 {
     public int zoom = 40;
-    //int zoom2 = 20;
     public int normal = 60;
     int smooth = 5;
 
@@ -79,5 +78,38 @@ public class CameraSatelitte : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            
+            Vector3 newPosition = m_camera.ScreenToViewportPoint(Input.mousePosition);
+            Vector3 direction = anciennePosition - newPosition;
+
+            float rotationAroundYAxis = -direction.x * 180;
+
+            m_camera.transform.position = target.position;
+
+            m_camera.transform.Rotate(new Vector3(0, 30, 0), Space.World);
+
+            m_camera.transform.Translate(new Vector3(0, 0, -distanceCible));
+
+           // anciennePosition = newPosition;
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+
+            Vector3 newPosition = m_camera.ScreenToViewportPoint(Input.mousePosition);
+            Vector3 direction = anciennePosition - newPosition;
+
+            float rotationAroundYAxis = -direction.x * 180;
+
+            m_camera.transform.position = target.position;
+
+            m_camera.transform.Rotate(new Vector3(0, -30, 0), Space.World);
+
+            m_camera.transform.Translate(new Vector3(0, 0, -distanceCible));
+
+            // anciennePosition = newPosition;
+        }
     }
 }
