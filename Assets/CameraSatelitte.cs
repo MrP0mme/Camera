@@ -34,6 +34,7 @@ public class CameraSatelitte : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Début de code pour le Zoom à paliers
          if(Input.mouseScrollDelta.y > 0)
          {
              isZoomed = !isZoomed;
@@ -47,7 +48,10 @@ public class CameraSatelitte : MonoBehaviour
          {
              m_camera.fieldOfView = Mathf.Lerp(m_camera.fieldOfView, normal, Time.deltaTime * smooth);
         }
+         //Fin du code Zoom à paliers
 
+
+         //Début code déplacement Horizontal et Vertical de la caméra par à rapport à l'objet
         if (Input.GetMouseButtonDown(1))
         {
             anciennePosition = m_camera.ScreenToViewportPoint(Input.mousePosition);
@@ -69,39 +73,21 @@ public class CameraSatelitte : MonoBehaviour
 
             anciennePosition = newPosition;
         }
+        //Fin code déplacement Horizontal et Vertical de la caméra par à rapport à l'objet
 
-        if(Input.GetButtonDown("Jump"))
-        {
-
-            m_camera.transform.position = debutPosition;
-            m_camera.transform.localRotation = Quaternion.Euler(0, 0, 0);      
-
-        }
-
+        //Début code déplacement de 30°
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            
-            Vector3 newPosition = m_camera.ScreenToViewportPoint(Input.mousePosition);
-            Vector3 direction = anciennePosition - newPosition;
-
-            float rotationAroundYAxis = -direction.x * 180;
-
             m_camera.transform.position = target.position;
 
             m_camera.transform.Rotate(new Vector3(0, 30, 0), Space.World);
 
             m_camera.transform.Translate(new Vector3(0, 0, -distanceCible));
 
-           // anciennePosition = newPosition;
         }
 
         if (Input.GetKeyDown(KeyCode.LeftAlt))
         {
-
-            Vector3 newPosition = m_camera.ScreenToViewportPoint(Input.mousePosition);
-            Vector3 direction = anciennePosition - newPosition;
-
-            float rotationAroundYAxis = -direction.x * 180;
 
             m_camera.transform.position = target.position;
 
@@ -109,7 +95,18 @@ public class CameraSatelitte : MonoBehaviour
 
             m_camera.transform.Translate(new Vector3(0, 0, -distanceCible));
 
-            // anciennePosition = newPosition;
         }
+        //Fin code déplacement de 30°
+
+        // Début code reset position camera
+        if (Input.GetButtonDown("Jump"))
+        {
+
+            m_camera.transform.position = debutPosition;
+            m_camera.transform.localRotation = Quaternion.Euler(0, 0, 0);      
+
+        }
+        //Fin code reset position camera    
+
     }
 }
