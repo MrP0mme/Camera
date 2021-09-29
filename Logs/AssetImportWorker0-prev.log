@@ -1,0 +1,300 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19041.1237; Version 2004; 64bit' Language: 'fr' Physical Memory: 65369 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Camera/Camera
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+64141
+Successfully changed project path to: D:/Camera/Camera
+D:/Camera/Camera
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 22.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.2f1 (068178b99f32)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Camera/Camera/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 (ID=0x1e82)
+    Vendor:   
+    VRAM:     8010 MB
+    Driver:   30.0.14.7155
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56284
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001645 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 20.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.901 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000338 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.692 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 56.8 MB.
+System memory in use after: 56.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1542.
+Total: 6.606200 ms (FindLiveObjects: 0.349400 ms CreateObjectMapping: 0.149200 ms MarkObjects: 5.833600 ms  DeleteObjects: 0.270300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/CameraSatelitte.cs
+  artifactKey: Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CameraSatelitte.cs using Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14713192afb9e1ee25aa83b0471a0c34') in 0.028527 seconds
+  Import took 0.030966 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000496 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.699 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1096 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 56.9 MB.
+System memory in use after: 57.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1544.
+Total: 7.948000 ms (FindLiveObjects: 0.563900 ms CreateObjectMapping: 1.027100 ms MarkObjects: 6.231200 ms  DeleteObjects: 0.121600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000420 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.664 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1096 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.1 MB.
+System memory in use after: 57.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1546.
+Total: 1.337700 ms (FindLiveObjects: 0.126600 ms CreateObjectMapping: 0.028500 ms MarkObjects: 1.099200 ms  DeleteObjects: 0.082600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 450.129548 seconds.
+  path: Assets/CameraSatelitte.cs
+  artifactKey: Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CameraSatelitte.cs using Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b679a9efa054eb780e7a6f2e2c2804') in 0.002932 seconds
+  Import took 0.004700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.376942 seconds.
+  path: Assets/CameraSatelitte.cs
+  artifactKey: Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CameraSatelitte.cs using Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b679a9efa054eb780e7a6f2e2c2804') in 0.002958 seconds
+  Import took 0.005969 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000446 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.656 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1096 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.2 MB.
+System memory in use after: 57.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1548.
+Total: 1.770200 ms (FindLiveObjects: 0.158300 ms CreateObjectMapping: 0.032400 ms MarkObjects: 1.522500 ms  DeleteObjects: 0.056100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.928546 seconds.
+  path: Assets/CameraSatelitte.cs
+  artifactKey: Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CameraSatelitte.cs using Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaac602a0d8b1eccf17c37378e3bc587') in 0.004479 seconds
+  Import took 0.006233 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000367 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.668 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1096 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.4 MB.
+System memory in use after: 57.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1550.
+Total: 1.465000 ms (FindLiveObjects: 0.117500 ms CreateObjectMapping: 0.032900 ms MarkObjects: 1.262600 ms  DeleteObjects: 0.050100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 281.710054 seconds.
+  path: Assets/CameraSatelitte.cs
+  artifactKey: Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CameraSatelitte.cs using Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763f96f0aaabace6ae73f3efac731c5f') in 0.002762 seconds
+  Import took 0.004165 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000460 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.833 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1096 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.5 MB.
+System memory in use after: 57.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1552.
+Total: 1.506200 ms (FindLiveObjects: 0.199900 ms CreateObjectMapping: 0.030000 ms MarkObjects: 1.227800 ms  DeleteObjects: 0.047400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000440 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.671 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1096 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1554.
+Total: 1.615400 ms (FindLiveObjects: 0.168500 ms CreateObjectMapping: 0.039200 ms MarkObjects: 1.344300 ms  DeleteObjects: 0.061300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 7991.325104 seconds.
+  path: Assets/CameraSatelitte.cs
+  artifactKey: Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CameraSatelitte.cs using Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7340ba074a89a8c39fbead0113000e67') in 0.002943 seconds
+  Import took 0.004615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.400032 seconds.
+  path: Assets/CameraSatelitte.cs
+  artifactKey: Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CameraSatelitte.cs using Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7340ba074a89a8c39fbead0113000e67') in 0.001949 seconds
+  Import took 0.003506 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000392 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.663 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1096 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1556.
+Total: 1.401600 ms (FindLiveObjects: 0.131500 ms CreateObjectMapping: 0.039900 ms MarkObjects: 1.168300 ms  DeleteObjects: 0.060600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 619.130071 seconds.
+  path: Assets/CameraSatelitte.cs
+  artifactKey: Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CameraSatelitte.cs using Guid(9f632aa78508d104ba16731322274b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2e20ba126eb46cfb0ecb60984d227c') in 0.004734 seconds
+  Import took 0.007440 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
